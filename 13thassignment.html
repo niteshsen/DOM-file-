@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        br>
+
+        <h2>Document object method practise</h2>
+        <p>This will include Mouse over!, Mouse out! click!</p>
+        <button id ="MYButton">Give it a try!</button><br><br>
+        <button id ="MYButtonsecond">Give it a try also!</button><br><br>
+        <button id ="MYButtonthird">Give it a try too!</button>
+        <script>
+            var z = document.getElementById("MYButton");
+            z.addEventListener("click", functionone);
+            function functionone(){
+                alert("Display Click");
+            };
+
+            var A = document.getElementById("MYButtonsecond");
+            A.addEventListener("mouseover" , functiontwo);
+            function functiontwo(){
+                alert("Display Mouse over");
+            };
+
+            var B = document.getElementById("MYButtonthird");
+            B.addEventListener("mouseout" , functionthree);
+
+            function functionthree(){
+                alert("Display Mouse out");
+            };
+         </script>
+    </body>
+</html>
